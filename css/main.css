@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title-bar {
+  height: 20px;
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: '20px auto 100px';
+      grid-template-columns: '20px auto 100px';
+      grid-template-areas: "logo description controls";
+  background: #5bc;
+}
+
+.title-bar .logo {
+  grid-area: 'logo';
+}
+
+.title-bar .logo img {
+  width: 15px;
+  height: 15px;
+  margin-top: 2.5px;
+  margin-left: 5px;
+}
+
+.title-bar .description {
+  grid-area: 'description';
+  text-align: center;
+}
+
+.title-bar .controls {
+  grid-area: 'controls';
+}
+
+.title-bar .controls ul {
+  display: inline;
+  color: #fff;
+}
+
+.title-bar .controls ul li {
+  height: 100%;
+  padding: 0 5px;
+  display: inline;
+  float: right;
+}
+
+iframe {
+  width: 100vw;
+  height: calc(100vh - 20px);
+}
+/*# sourceMappingURL=main.css.map */
